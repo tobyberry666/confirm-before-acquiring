@@ -8,8 +8,6 @@ An [agentskills.io](https://agentskills.io) compatible skill for AI coding agent
 
 这个 skill 的作用很简单：**强制 agent 在任何下载、安装、创建工具类文件之前暂停，向用户确认，得到明确许可后才能继续。**
 
-有约束，才好用。
-
 ## What it does
 
 - 覆盖所有"获取"行为：`npm install`、`pip install`、`curl`、`wget`、创建 helper/config/script 文件
