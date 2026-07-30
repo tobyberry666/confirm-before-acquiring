@@ -18,20 +18,21 @@ An [agentskills.io](https://agentskills.io) compatible skill for AI coding agent
 
 ## Install
 
-### Claude Code
-
 ```bash
-# 复制到 skills 目录
+# clone 到本地
+git clone https://github.com/tobyberry666/confirm-before-acquiring.git
+
+# Claude Code
 cp -r confirm-before-acquiring ~/.claude/skills/
+
+# Codex / Copilot CLI / Gemini CLI（跨运行时通用路径）
+cp -r confirm-before-acquiring ~/.agents/skills/
+
+# Cursor
+cp -r confirm-before-acquiring ~/.cursor/skills/
 ```
 
-### QoderWork
-
-直接放入 `~/.qoderworkcn/skills/confirm-before-acquiring/` 即可。
-
-### 其他支持 agentskills.io 规范的工具
-
-将 `confirm-before-acquiring/` 目录放入对应工具的 skills 路径下。
+或直接将 `confirm-before-acquiring/` 目录放入任何支持 [agentskills.io](https://agentskills.io/specification) 规范的工具的 skills 路径下。
 
 ## Structure
 
@@ -48,7 +49,6 @@ confirm-before-acquiring/
 - Gemini CLI
 - GitHub Copilot CLI
 - Kimi Code
-- QoderWork
 - 任何遵循 [agentskills.io/specification](https://agentskills.io/specification) 的工具
 
 ## License
